@@ -1,0 +1,85 @@
+//NAV
+header {
+    
+    nav {
+        ul.uk-navbar-nav {
+            > li {
+                > a {font: {size:.85em;family: map-get($fonts, "primary");weight:700;}color:$spot2;@include transition(all .4s);min-height:40px;padding:0;padding-left:30px;
+                    &:hover {color:$spot1;}
+                    &.uk-open {color:$spot1;}
+                }
+                &.uk-parent {
+                    &:hover {color:$spot2;}
+                }
+                .current-menu-item {
+                    a {}
+                }
+                .uk-navbar-dropdown {;
+                    &::before {}
+                    ul {
+                        li {
+                            a {
+                            &:hover {}
+                            }
+                        }
+                    }
+                }
+                &.hide {display:none;}
+            }
+        }
+        .nav-canvas {
+            li {
+               > a {
+                &:hover {
+                    
+                }
+            }
+            &.current-menu-item {
+                a {
+               
+                }
+            }
+                ul {
+                    li {
+                        a {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:320px) {
+    footer {
+        nav {
+            ul {list-style:none;padding-left:0;
+                li {display:block;padding-right:1em;padding-bottom:1em;opacity:.8;
+                    a {font: {size:$h4;family: map-get($fonts, "primary");weight:700;}color:$white;line-height:1.4;text-transform:uppercase;
+                    &:hover {color:$spot1;}
+                }
+                    .sub-menu {display:none;}
+                }
+            }
+        }
+    }
+}
+/* UIKIT SMALL */
+@media only screen and (min-width:640px) {
+    
+}
+/* UIKIT MEDIUM */
+@media only screen and (min-width:960px) {
+    footer {
+        nav {
+            ul {
+                li {display:inline-block;
+                    a {font: {size:$h6;
+
+                }
+
+                }
+            }
+        }
+    }
+}
+}

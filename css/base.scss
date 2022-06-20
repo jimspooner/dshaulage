@@ -1,0 +1,65 @@
+// imports
+@import 'base/_variables';
+@import 'base/_mixins';
+
+$sizes: ('xxlarge',$h1), ('xlarge',$h2), ('large',$h3), ('medium',$h4), ('reg',$h5), ('small',$h6);
+$headers: ('1',$h1), ('2',$h2), ('3',$h3), ('4',$h4), ('5',$h5), ('6',$h6);
+$colors: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4), ('white',$white), ('black',$black), ('lightgrey,'$lightgrey), ('darkgrey,'$darkgrey);
+$fonts: ("primary": "Open Sans", "secondary": "verdana");
+@each $size in $sizes {
+    .uk-text-#{nth($size,1)} {
+        font-size: nth($size,2);
+    }
+}
+@each $header in $headers {
+    h#{nth($header,1)} {
+        font-size: nth($header,2);
+    }
+}
+@each $color in $colors {
+    .uk-text-#{nth($color,1)} {
+        color: nth($color,2);
+    }
+}
+@each $color in $colors {
+    .uk-bgc-#{nth($color,1)} {
+        background-color: nth($color,2);
+    }
+}
+strong, b {font-weight:600;}
+em, i {font-style: italic;}
+body {line-height:1.4;color:$black;font: {size:$h4;family: map-get($fonts, "primary");weight:400;}}
+h1,h2 {letter-spacing:-1px;line-height:1.1;font: {family: map-get($fonts, "primary");}font-weight:800;}
+h3,h4 {line-height:1.2;font: {family: map-get($fonts, "primary");}}
+h5,h6 {line-height:1.4;font: {family: map-get($fonts, "primary");}}
+
+/* UIKIT UNIVERSAL */
+@media only screen and (min-width:320px) {
+    html {font-size:12px;}
+}
+/* UIKIT SMALL */
+@media only screen and (min-width:640px) {
+    html {font-size:13px;}
+}
+/* UIKIT MEDIUM */
+@media only screen and (min-width:960px) {
+    html {font-size:14px;}
+}
+/* UIKIT LARGE */
+@media only screen and (min-width:1200px) {
+    html {font-size:15px;}
+}
+/* UIKIT XLARGE */
+@media only screen and (min-width:1600px) {
+    html {font-size:16px;}
+}
+
+@import 'base/_uikit';
+@import 'base/_header';
+@import 'base/_footer';
+@import 'base/_nav';
+@import 'base/_buttons';
+@import 'plugins/_woocommerce';
+@import 'plugins/_cf7';
+@import 'base/_theme';
+@import 'base/_wc';

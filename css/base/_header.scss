@@ -1,0 +1,28 @@
+//HEADER
+header {
+    .logo, .uk-headermargin-reduce {@include transition(all .4s);}
+     &.uk-active {-webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.25);-moz-box-shadow:0px 1px 2px 0px rgba(50, 50, 50, 0.25);box-shadow:0px 1px 2px 0px rgba(50, 50, 50, 0.25);
+         .logo {max-height:40px;}
+         .uk-headermargin-reduce {margin-top:0!important;}
+     }
+ }
+/* UIKIT UNIVERSAL */
+@media only screen and (min-width:320px) {
+    .logo {max-height:50px;}
+}
+/* UIKIT SMALL */
+@media only screen and (min-width:640px) {
+    .logo {max-height:65px;}
+}
+/* UIKIT MEDIUM */
+@media only screen and (min-width:960px) {
+    .logo {max-height:50px;}
+}
+/* UIKIT LARGE */
+@media only screen and (min-width:1200px) {
+
+}
+/* UIKIT XLARGE */
+@media only screen and (min-width:1600px) {
+
+}
