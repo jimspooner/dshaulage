@@ -8,6 +8,7 @@
 					<div class="uk-width-1-1" style="width:100%;">
 							<h2><?php the_title(); ?></h2>
                             <?php include( locate_template( 'components/calendar/calendar.php', false, false ) ); ?>
+
 						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div><?php the_content(); ?></div>
