@@ -1084,6 +1084,9 @@ a
 /* UIKIT LARGE */
 /* UIKIT XLARGE */
 @media only screen and (min-width: 320px) {
+  .uk-bgc-spot1 {
+    background-color: #DC143C !important;
+  }
   .uk-to-small {
     display: none;
   }

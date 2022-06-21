@@ -1,5 +1,6 @@
 //THEME
 @media only screen and (min-width:320px) {
+    .uk-bgc-spot1 {background-color:$spot1!important;}
     .uk-to-small {display:none;}
     .uk-list-view {border-bottom:1px solid $lightgrey}
     .widget_calendar {float: left;}

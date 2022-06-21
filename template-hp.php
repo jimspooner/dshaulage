@@ -1,4 +1,4 @@
-<?php /* Template Name: Basic Template */ get_header(); ?>
+<?php /* Template Name: HP basic Template */ get_header(); ?>
 
 	<main role="main">
 
@@ -6,8 +6,8 @@
 			<div class="wrapper uk-padding-large uk-padding-remove-left uk-padding-remove-right" style="margin-top:2vh">
 			<div class="uk-flex" uk-grid>
 					<div class="uk-width-1-1" style="width:100%;">
-							<h2><?php the_title(); ?></h2>
-
+							<h2><?php the_title(); ?></h2
+                            <?php //include( locate_template( 'components/calendar/calendar.php', false, false ) ); ?>
 
 						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
