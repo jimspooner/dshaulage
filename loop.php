@@ -17,7 +17,7 @@
 
 	<!-- article -->
 	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+		<p><?php _e( 'No Logs have been added.', 'html5blank' ); ?></p>
 	</article>
 	<!-- /article -->
 

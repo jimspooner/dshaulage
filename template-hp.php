@@ -3,15 +3,16 @@
 	<main role="main">
 
     <section>
-			<div class="wrapper uk-padding-large uk-padding-remove-left uk-padding-remove-right" style="margin-top:2vh">
+			<div class="wrapper uk-padding-large uk-padding-remove-left uk-padding-remove-right" >
 			<div class="uk-flex" uk-grid>
 					<div class="uk-width-1-1" style="width:100%;">
-							<h2><?php the_title(); ?></h2
-                            <?php //include( locate_template( 'components/calendar/calendar.php', false, false ) ); ?>
-
 						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<div><?php the_content(); ?></div>
+							
+								<h2 class="uk-margin-remove-top"><strong>Inspections</strong></h2>
+								<p>Click below to start a Daily Inspection for the vehicle registration below.</p>
+								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?reg=8"><strong>DK17 KRE</strong></a>
+								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?reg=9"><strong>DSH 1</strong></a>
 							</article>
 						<?php endwhile; ?>
 						<?php else: ?>
@@ -26,5 +27,9 @@
   
 
 	</main>
-
+<script>
+jQuery(document).ready(function(){ 
+	jQuery('.saved').delay(5000).fadeOut('slow');
+});
+</script>
 <?php //get_footer(); ?>

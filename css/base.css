@@ -59,7 +59,7 @@ h6 {
 }
 
 .uk-text-spot4 {
-  color: #8DBAD8;
+  color: #ffde00;
 }
 
 .uk-text-white {
@@ -91,7 +91,7 @@ h6 {
 }
 
 .uk-bgc-spot4 {
-  background-color: #8DBAD8;
+  background-color: #ffde00;
 }
 
 .uk-bgc-white {
@@ -307,7 +307,7 @@ header nav ul.uk-navbar-nav > li.hide {
 }
 
 .uk-button-spot1 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -399,7 +399,7 @@ a
 }
 
 .uk-button-spot2 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -491,7 +491,7 @@ a
 }
 
 .uk-button-spot3 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -583,20 +583,20 @@ a
 }
 
 .uk-button-spot4 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  border: 1px solid #8DBAD8;
-  background-color: #8DBAD8;
+  border: 1px solid #ffde00;
+  background-color: #ffde00;
   color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .uk-button-spot4:hover {
-  color: #8DBAD8;
+  color: #ffde00;
   background-color: transparent;
 }
 
@@ -606,13 +606,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #8DBAD8;
+  color: #ffde00;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .uk-textbutton-spot4:hover {
-  color: #8DBAD8;
+  color: #ffde00;
 }
 
 .uk-button-dark:hover {
@@ -633,7 +633,7 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #8DBAD8;
+  color: #ffde00;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -648,7 +648,7 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #8DBAD8;
+  color: #ffde00;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -675,7 +675,7 @@ a
 }
 
 .uk-button-white {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -767,7 +767,7 @@ a
 }
 
 .uk-button-black {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -859,7 +859,7 @@ a
 }
 
 .uk-button-lightgrey {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;
@@ -951,7 +951,7 @@ a
 }
 
 .uk-button-darkgrey {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
   font-weight: 400;
   padding: .5rem 1rem;

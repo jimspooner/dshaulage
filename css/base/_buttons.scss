@@ -2,7 +2,7 @@ $buttons: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4)
 
 @each $button in $buttons {
         .uk-button-#{nth($button,1)} {
-                font: {size:$h5;family: map-get($fonts, "primary");weight:400;}padding:.5rem 1rem;margin:.3rem 0;border:1px solid nth($button,2);background-color:nth($button,2);color:$white;@include transition(all .4s);
+                font: {size:$h2;family: map-get($fonts, "primary");weight:400;}padding:.5rem 1rem;margin:.3rem 0;border:1px solid nth($button,2);background-color:nth($button,2);color:$white;@include transition(all .4s);
                 &:hover {color:nth($button,2);background-color:transparent;}
         }
         .uk-textbutton-#{nth($button,1)} {

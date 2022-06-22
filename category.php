@@ -1,21 +1,21 @@
 <?php get_header(); ?>
-
+<?php $category = get_queried_object(); $cat_title = get_cat_name($category->term_id); ?>
 	<main role="main">
 		<!-- section -->
 		<section>
-		<div class="wrapper uk-padding-large uk-padding-remove-left uk-padding-remove-right">
-			<div class="uk-flex" uk-grid>
-						<div class="">
-							<h1><?php _e( 'Daily Inspection', 'html5blank' ); ?></h1>
+			<div class="wrapper uk-padding-large uk-padding-remove-left uk-padding-remove-right" style="margin-top:2vh;">
+				<div class="uk-flex" uk-grid>
+					<div class="" style="width:100%;">
+						<h2><?php _e( 'Daily Inspections - '.$cat_title, 'html5blank' ); ?></h2>
 
-							<?php get_template_part('loop'); ?>
+						<?php get_template_part('loop'); ?>
 
-							<?php get_template_part('pagination'); ?>
-						</div>
+						<?php get_template_part('pagination'); ?>
 					</div>
+				</div>
 			</div>
 		</section>
 		<!-- /section -->
 	</main>
 
-<?php get_footer(); ?>
+<?php //get_footer(); ?>
