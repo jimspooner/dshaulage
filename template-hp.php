@@ -11,8 +11,8 @@
 							
 								<h2 class="uk-margin-remove-top"><strong>Inspections</strong></h2>
 								<p>Click below to start a Daily Inspection for the vehicle registration below.</p>
-								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?reg=8"><strong>DK17 KRE</strong></a>
-								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?reg=9"><strong>DSH 1</strong></a>
+								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?id=8&reg=DK17KRE"><strong>DK17 KRE</strong></a>
+								<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?id=9&reg=DSH1"><strong>DSH 1</strong></a>
 							</article>
 						<?php endwhile; ?>
 						<?php else: ?>

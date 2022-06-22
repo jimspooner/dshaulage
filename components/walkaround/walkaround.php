@@ -170,7 +170,10 @@ jQuery("#walkaround_form").on("submit", function (event) {
             var ajaxurl = form.data("url");
             var detail_info = {
                 post_report: answer,
-                post_vehicle: <?php echo $_GET['reg']; ?>,
+                post_vehicle: <?php echo $_GET['id']; ?>,
+                post_reg: '<?php echo $_GET['reg']; ?>',
+                post_month: '<?php echo date('F'); ?>',
+                post_year: '<?php echo date('Y'); ?>',
                 post_description: form.find("#post_description").val()
             }
 

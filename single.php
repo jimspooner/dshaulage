@@ -1,119 +1,5 @@
 <?php get_header(); ?>
-<script>
-var data = [
-        {
-            "id" : 1,
-            "q":"Good visibility for driver through cab windows and mirrors. All required mirrors fitted and adjusted correctly.",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 2,
-            "q":"Driving controls, seat and driver saftey belt adjusted correctly.",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 3,
-            "q":"Windscreen washer, wiper, demister and horn perating correctly",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 4,
-            "q":"Tachograph calibrated with correct hours, speed limiter plaque displayed",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 5,
-            "q":"All instruments, gauges and other warning devices operating corectly(including ABS/EBS in cab warninglights)",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 6,
-            "q":"No air leaks or pressure drop",
-            "a":"In-Cab"
-        },
-        {
-            "id" : 7,
-            "q":"Vehicle sitting square and not leaning to one side",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 8,
-            "q":"Tax, insurance and transport discs (if applicable) present and valis. Number plates clearly visible.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 9,
-            "q":"Wheels in good condition and secure, tyres undamaged with correct inflation and tread depth.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 10,
-            "q":"All lights, reflector and markings fitted, clean and in good condition.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 11,
-            "q":"exhaust secure with no excess noise or smoke",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 12,
-            "q":"Air and electrical suzies and conectors fitted correctly (inc ABS/EBS cable).",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 13,
-            "q":"Vehcile access, steps, catwalk or drawbar coupling in good condition.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 14,
-            "q":"Vehicle body/wings/guards, side and rear/curtains and straps/doors/tail lift in good condition.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 15,
-            "q":"Fith wheel located and locked correctly, landing legs and handle in correct position",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 16,
-            "q":"Trainler park brake operating correctly.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 17,
-            "q":"Air suspension correctly set.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 18,
-            "q":"Engine Oil, water, windscxreen washer resiviour and feul levels checked and no leaks.",
-            "a":"External Vehicle"
-        },
-        {
-            "id" : 19,
-            "q":"Steering and brakes operating correctly.",
-            "a":"Prior to leaving"
-        },
-        {
-            "id" : 20,
-            "q":"Loads secured and weight distributed correctly.",
-            "a":"Prior to leaving"
-        },
-        {
-            "id" : 21,
-            "q":"Tachograph, speedometer and speed limiter operating correctly.",
-            "a":"On the road"
-        },
-        {
-            "id" : 22,
-            "q":"ABS/EBS warning lights off.",
-            "a":"On the road"
-        }
-]
-console.log(data)
-</script>
+
 	<main role="main">
 	<!-- section -->
 	<section>
@@ -127,7 +13,7 @@ console.log(data)
 
 
 			<!-- post title -->
-			<h2 style="line-height:1.2;">Daily Inspection<br><span style="font-weight:400;color:"><?php the_title(); ?></span></h2>
+			<h2 style="line-height:1.2;margin-top:0;">Daily Inspection<br><span style="font-weight:400;color:"><?php the_title(); ?></span></h2>
 			<!-- /post title -->
 			<?php $report = get_post_meta(get_the_ID(), 'walkaround_report'); $report_array = explode(';', $report[0]); //print_r($report_array); ?>
 			<!-- post details -->
