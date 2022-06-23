@@ -1,8 +1,28 @@
 <?php 
+
+function my_enqueue() {
+
+    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/main.js', array('jquery') );
+
+    wp_localize_script( 'ajax-script', 'my_ajax_object',
+            array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+
+}
+add_action( 'wp_enqueue_scripts', 'my_enqueue' );
+
+
+
 add_action('wp_ajax_nopriv_save_post_details_form','save_walkaround_form_action');
 add_action('wp_ajax_save_post_details_form','save_walkaround_form_action');
 
 function save_walkaround_form_action() {
+
+    $response = array(
+        'error'             => '',
+        'success'           => '',
+        'post_id'           => '',
+        'post_url'          => '',
+      );
 
     $post_report = $_POST['post_details']['post_report'];
     $post_description = $_POST['post_details']['post_description'];
@@ -15,7 +35,6 @@ function save_walkaround_form_action() {
         'post_category'=>array($post_vehicle),
         'tags_input'=>array($post_reg),
         'post_status'=> 'publish',
-        'post_type'=>post,
         'post_date'=> get_the_date()
     ];
      

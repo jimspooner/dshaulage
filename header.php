@@ -42,6 +42,6 @@
 		 </div>
 		
 </header>
-<?php if ($_GET['report'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">YOUR REPORT HAS BEEN SAVED</div><?php endif; ?>
+<?php if (isset($_GET['report'])) : if ($_GET['report'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">YOUR REPORT HAS BEEN SAVED</div><?php endif; endif; ?>
 			<!-- /header -->
 

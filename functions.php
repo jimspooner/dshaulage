@@ -264,13 +264,7 @@ function html5blank_header_scripts()
 }
 
 // Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts()
-{
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
-}
+
 
 // Load HTML5 Blank styles
 function html5blank_styles()
@@ -303,6 +297,8 @@ function register_html5_menu()
         'legal-menu' => __('Legal Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
+
+
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -513,7 +509,7 @@ function html5blankcomments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
+
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
@@ -735,5 +731,7 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
           </style>';
   }
   add_action( 'admin_head', 'fix_svg' );
+
+ 
 
     ?>

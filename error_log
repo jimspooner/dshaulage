@@ -1,0 +1,216 @@
+[22-Jun-2022 15:22:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:18
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 18
+[22-Jun-2022 15:23:21 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:18
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 18
+[22-Jun-2022 15:24:43 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:18
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 18
+[22-Jun-2022 15:29:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:30:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:32:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:32:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:39:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:41:00 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[22-Jun-2022 15:42:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:25
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 25
+[23-Jun-2022 07:16:06 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:34
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 34
+[23-Jun-2022 07:19:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:34
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 34
+[23-Jun-2022 07:34:50 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:36
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 36
+[23-Jun-2022 07:36:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:36
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 36
+[23-Jun-2022 07:38:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:36
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 36
+[23-Jun-2022 08:01:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:77
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 77
+[23-Jun-2022 08:30:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 09:49:29 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 09:52:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 10:03:45 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 10:11:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 10:12:36 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 10:15:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:26
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 26
+[23-Jun-2022 10:33:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:35
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 35
+[23-Jun-2022 10:33:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:35
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 35
+[23-Jun-2022 10:42:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:38
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(187): do_action('wp_ajax_save_po...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 38
+[23-Jun-2022 10:49:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "post" in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php:38
+Stack trace:
+#0 /home/davidsha/public_html/wp-includes/class-wp-hook.php(307): save_walkaround_form_action('')
+#1 /home/davidsha/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /home/davidsha/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /home/davidsha/public_html/wp-admin/admin-ajax.php(202): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in /home/davidsha/public_html/wp-content/themes/dshaulage/functions/walkaroundsave.php on line 38
