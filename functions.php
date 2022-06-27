@@ -732,6 +732,27 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
   }
   add_action( 'admin_head', 'fix_svg' );
 
- 
+function dsh_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(https://davidshaulage.co.uk/wp-content/uploads/2022/06/dsh-icon-320-65.png);
+		height:65px;
+		width:320px;
+		background-size: 320px 65px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'dsh_login_logo' );
 
+function my_login_logo_url_title() {
+    return 'DS Haulage';
+}
+add_filter( 'login_headertext', 'my_login_logo_url_title' );
+
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
     ?>

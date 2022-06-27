@@ -153,7 +153,7 @@ $('.nodefect').on("click", function() {
 $('.defect').on("click", function() {
     qa = $(this).attr('data-a');
     dq = $(this).attr('data-q');
-    answer += dq+'| '+qa+';';
+    answer += dq+'| '+qa+';';  
     $('#'+qid).hide();
     qid = qid + 1;
     $('#'+qid).show();
