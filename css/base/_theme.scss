@@ -14,6 +14,18 @@
 #wp-calendar tbody .pad { background: none; }
 #wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
 #wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+.uk-card-default {background: #fff;color: #666;box-shadow: 0 2px 4px rgba(0,0,0,.1);}
+.uk-card-header {background-color:$spot3;color:$white;}
+.uk-card-header h2 {color:$white;}
+#menuToggle {display: block;position: absolute;top:15px;right:15px;z-index:1;-webkit-user-select: none;user-select: none;background:$spot3;border:0;}
+#menuToggle span {display: block;width:30px;height: 3px;margin-bottom: 5px;position: relative;background: #fff;border-radius: 3px;z-index: 1;transform-origin: 4px 0px; 
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;}
+#menuToggle span:first-child {transform-origin: 0% 0%;} 
+#menuToggle span:nth-last-child(2) {transform-origin: 0% 100%;}
+.uk-offcanvas-bar {background:$spot3;font-size:1rem;}
+.uk-offcanvas-bar .uk-nav-default>li>a, .uk-offcanvas-bar .uk-nav-default>li>a:focus, .uk-offcanvas-bar .uk-nav-default>li>a:hover {font-size:18px;color:$white;}
+.uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {font-size:18px;}
+.uk-offcanvas-overlay::before {background: rgba(255,255,255,.6);}
 }
 @media only screen and (max-width:320px) {
     .uk-to-small {display:block;background-color:$spot1;position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100vh;font-size:.8rem;color:$white;z-index:1000;}

@@ -1,4 +1,4 @@
-<
+
 <div class="waiting uk-text-center uk-position-absolute uk-bgc-white" style="z-index:100;height:100%;width:100%;padding-top:55%;display:none;"><img src="<?php echo get_template_directory_uri(); ?>/img/waiting-icon-gif-1.gif" alt="waiting" style="max-width:80px;"><br><span class="uk-text-center">SAVING</span></div>
 <section class="walkaround" style="top:0;width:100vw;height:100%;">
 <div class="uk-position-top" >

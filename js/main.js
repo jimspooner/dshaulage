@@ -121,7 +121,7 @@ var defects = "";
 var answer = "";
 var qa = "";
 var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth())+'-'+today.getDate();
+var date = today.getDate()+'-'+(today.getMonth())+'-'+today.getFullYear();
 $('#defectsq').height(wheight);
 $.each(data, function (key, value) {
     quid = value.id;

@@ -4,7 +4,7 @@
 
 $sizes: ('xxlarge',$h1), ('xlarge',$h2), ('large',$h3), ('medium',$h4), ('reg',$h5), ('small',$h6);
 $headers: ('1',$h1), ('2',$h2), ('3',$h3), ('4',$h4), ('5',$h5), ('6',$h6);
-$colors: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4), ('white',$white), ('black',$black), ('lightgrey,'$lightgrey), ('darkgrey,'$darkgrey);
+$colors: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4), ('spot5',$spot5), ('white',$white), ('black',$black), ('lightgrey,'$lightgrey), ('darkgrey,'$darkgrey);
 $fonts: ("primary": "Open Sans", "secondary": "verdana");
 @each $size in $sizes {
     .uk-text-#{nth($size,1)} {

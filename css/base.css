@@ -62,6 +62,10 @@ h6 {
   color: #ffde00;
 }
 
+.uk-text-spot5 {
+  color: #215588;
+}
+
 .uk-text-white {
   color: white;
 }
@@ -92,6 +96,10 @@ h6 {
 
 .uk-bgc-spot4 {
   background-color: #ffde00;
+}
+
+.uk-bgc-spot5 {
+  background-color: #215588;
 }
 
 .uk-bgc-white {
@@ -1136,6 +1144,70 @@ a
     font-size: 10px;
     text-transform: uppercase;
     padding-top: 10px;
+  }
+  .uk-card-default {
+    background: #fff;
+    color: #666;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .uk-card-header {
+    background-color: #2C70B2;
+    color: white;
+  }
+  .uk-card-header h2 {
+    color: white;
+  }
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    background: #2C70B2;
+    border: 0;
+  }
+  #menuToggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  .uk-offcanvas-bar {
+    background: #2C70B2;
+    font-size: 1rem;
+  }
+  .uk-offcanvas-bar .uk-nav-default > li > a, .uk-offcanvas-bar .uk-nav-default > li > a:focus, .uk-offcanvas-bar .uk-nav-default > li > a:hover {
+    font-size: 18px;
+    color: white;
+  }
+  .uk-offcanvas-bar .uk-nav-default .uk-nav-sub a {
+    font-size: 18px;
+  }
+  .uk-offcanvas-overlay::before {
+    background: rgba(255, 255, 255, 0.6);
   }
 }
 

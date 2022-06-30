@@ -7,14 +7,19 @@
 				<div class="uk-child-width-1-1 uk-flex" uk-grid>
 					<div class=""></div>
 					<div class="" style="width:100%;">
-						<h2><?php _e( 'Daily Inspections - '.$cat_title, 'html5blank' ); ?></h2>
+					<div class="uk-card uk-card-default uk-margin-medium-bottom">
+									<div class="uk-card-header"><h2 class="uk-margin-remove-top" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="history"></span> <strong><?php _e( 'Daily Inspections - '.$cat_title, 'html5blank' ); ?></strong></h2></div>
+								</div>
+
 
 						<?php get_template_part('loop-cat'); ?>
 
 						<?php get_template_part('pagination'); ?>
+						
 					</div>
 				</div>
 			</div>
+			<!-- <button id="test" class="uk-position-bottom-center">T</button> -->
 		</section>
 		<!-- /section -->
 	</main>
