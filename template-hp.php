@@ -9,20 +9,21 @@
 						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div class="uk-card uk-card-default">
-									<div class="uk-card-header"><h2 class="uk-margin-remove-top"><span class="uk-margin-small-right uk-icon" uk-icon="future"></span> <strong>Inspections</strong></h2></div>
-									<div class="uk-card-body"><p>Click below to start a Daily Inspection for the vehicle registration below.</p>
-										<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?id=3&reg=DK17KRE"><strong>DK17 KRE</strong></a>
-										<a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-padding-small" style="border-radius:8px;border:2px solid #333;color:#333" href="<?php echo home_url(); ?>/walkaround-inspection/?id=4&reg=DSH1"><strong>DSH 1</strong></a>
+									<div class="uk-card-header" uk-toggle="target: #dailyInspections;"><h2 class="uk-margin-remove-top"><span class="uk-margin-small-right uk-icon" uk-icon="thumbnails"></span> <strong>DASHBOARD</strong></h2></div>
+									<div id="dailyInspections" class="uk-card-body">
+										<div class="uk-child-width-1-2 uk-grid-small" uk-grid>
+											<div><a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>/walkaround-inspection/"><div class="uk-text-centeruk-icon" uk-icon="icon:plus-circle;ratio:2;"></div><br><strong>Daily</strong></a></div>
+											<div><a class="uk-button uk-button-spot3 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;color:#fff!important;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>/category/inspections/"><div class="uk-text-centeruk-icon" uk-icon="icon:history;ratio:2;"></div><br><strong>History</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>"><div class="uk-text-centeruk-icon" uk-icon="icon:plus-circle;ratio:2;"></div><br><strong>Service</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot3 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;color:#fff!important;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>"><div class="uk-text-centeruk-icon" uk-icon="icon:history;ratio:2;"></div><br><strong>History</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>/add-vehicle/"><div class="uk-text-centeruk-icon" uk-icon="icon:plus-circle;ratio:2;"></div><br><strong>Vehicle</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot3 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;color:#fff!important;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>"><div class="uk-text-centeruk-icon" uk-icon="icon:history;ratio:2;"></div><br><strong>Vehicles</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot4 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>"><div class="uk-text-centeruk-icon" uk-icon="icon:plus-circle;ratio:2;"></div><br><strong>Defect</strong></a></div>
+											<div style="opacity:0.3"><a class="uk-button uk-button-spot3 uk-text-darkgrey uk-text-lead uk-margin-remove uk-text-center" style="width:100%;color:#fff!important;border-radius:8px;color:#333;margin:2px!important;font-size:1.2rem;padding:20px!important;" href="<?php echo home_url(); ?>"><div class="uk-text-centeruk-icon" uk-icon="icon:history;ratio:2;"></div><br><strong>History</strong></a></div>
+										</div>
 									</div>
 								</div>
 
-								<div class="uk-card uk-card-default uk-margin-small-top">
-									<div class="uk-card-header"><h2 class="uk-margin-remove-top"><span class="uk-margin-small-right uk-icon" uk-icon="cog"></span> <strong>Services</strong></h2></div>
-									<div class="uk-card-body"><p>Your Next services</p>
-
-
-									</div>
-								</div>
 							</article>
 						<?php endwhile; ?>
 						<?php else: ?>

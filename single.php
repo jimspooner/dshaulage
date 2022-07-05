@@ -13,12 +13,16 @@
 
 
 			<!-- post title -->
-			<h2 style="line-height:1.2;margin-top:0;">Daily Inspection<br><span style="font-weight:400;color:"><?php the_title(); ?></span></h2>
+			<div class="uk-card uk-card-default uk-margin-medium-bottom">
+									<div class="uk-card-header"><a onclick="history.back()"><h2 class="uk-margin-remove-top uk-margin-remove-bottom" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="reply"></span> <strong><?php the_title(); ?></strong></h2></a></div>
+								</div>
+			<!-- <h2 style="line-height:1.2;margin-top:0;">Daily Inspection<br><span style="font-weight:400;color:"><?php the_title(); ?></span></h2> -->
 			<!-- /post title -->
-			<?php $report = get_post_meta(get_the_ID(), 'walkaround_report'); $report_array = explode(';', $report[0]); //print_r($report_array); ?>
+			<?php $report = get_post_meta(get_the_ID(), 'walkaround_report'); $report_array = explode(';', $report[0]); $mileage = get_post_meta(get_the_ID(), 'walkaround_mileage');//print_r($report_array); ?>
 			<!-- post details -->
 			<?php //echo $JSON_report; ?>
 				<div class="uk-grid-small uk-grid-match" style="margin-left:0;" uk-grid>
+				<div class="uk-width-1-1 uk-padding-remove-left"><div class="uk-bgc-darkgrey uk-padding-small uk-margin-bottom"><span class="uk-text-white">Mileage: <strong><?php echo $mileage[0]; ?></strong></span></div></div>
 			<?php foreach ($report_array as $value) { 
 				$report_value = explode('|', $value); if ($report_value[0]) : ?>
 					<div class="uk-width-2-3" style="border-bottom:1px solid #ecebeb;padding:.6em .3em;margin-top:0;"><span class="uk-text-meta"><?php echo $report_value[0]; ?></span></div>
@@ -26,7 +30,7 @@
 			<?php endif; } ?>
 				</div>
 			<!-- /post details -->
-			<div id="defectsq" class="results"></div>
+			<!-- <div id="defectsq" class="results"></div> -->
 
 			<?php the_content(); // Dynamic Content ?>
 

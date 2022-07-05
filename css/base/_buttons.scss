@@ -1,4 +1,4 @@
-$buttons: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4), ('white',$white), ('black',$black), ('lightgrey,'$lightgrey), ('darkgrey,'$darkgrey);
+$buttons: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4), ('spot5',$spot5), ('white',$white), ('black',$black), ('lightgrey,'$lightgrey), ('darkgrey,'$darkgrey);
 
 @each $button in $buttons {
         .uk-button-#{nth($button,1)} {

@@ -38,7 +38,7 @@
 
 						<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
 							<div class="uk-offcanvas-bar">
-								<div style="margin-left:-6px;"><img src="https://davidshaulage.co.uk/wp-content/uploads/2022/06/dsh-icon-100.png" alt="ds haulage logo" style="max-height:80px;"></div>
+
 								<button class="uk-offcanvas-close" type="button" uk-close></button>
 								<div class="uk-width-1-2@s uk-width-2-5@m uk-margin-small-top">
 									<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
@@ -46,26 +46,30 @@
 										<li class="uk-nav-divider"></li>
 										<li class="uk-parent uk-open"><a href="#">DAILY INSPECTIONS</a>
 											<ul class="uk-nav-sub uk-open" >
-											<li><a href="#" style="color:white;">Add inspection</a>
-													<ul>
-														<li><a href="<?php echo home_url(); ?>/walkaround-inspection/?id=3&reg=DK17KRE"><span class="uk-margin-small-right uk-icon" uk-icon="icon:future"></span><strong>DK17 KRE</strong></a></li>
-														<li class="uk-nav-divider"></li>
-														<li><a  href="<?php echo home_url(); ?>/walkaround-inspection/?id=4&reg=DSH1"><span class="uk-margin-small-right uk-icon" uk-icon="icon:future"></span><strong>DSH 1</strong></a></li>
-													</ul>
-												</li>
+											<li><a href="<?php echo home_url(); ?>/walkaround-inspection/" style="color:rgba(255,255,255,.5);"><span class="uk-margin-small-right uk-icon" uk-icon="plus-circle"></span> Add Daily</a></li>
 												<li class="uk-nav-divider"></li>
-												<li><a href="#" style="color:white;">History</a>
-													<ul>
-														<li><a href="<?php echo home_url(); ?>/category/inspections/dk17kre/" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:history"></span>DK17 KRE</strong></a></li>
-														<li class="uk-nav-divider"></li>
-														<li><a href="<?php echo home_url(); ?>/category/inspections/dsh1/" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:history"></span>DSH</strong></a></li>
-													</ul>
-	</li>
+												<li><a href="<?php echo home_url(); ?>/category/inspections/" style="color:rgba(255,255,255,.5);"><span class="uk-margin-small-right uk-icon" uk-icon="icon:history"></span> History</a></li>
 											</ul>
 										</li>
 										<li class="uk-nav-divider"></li>
 										<li class="uk-parent">
 											<a href="#">SERVICES</a>
+											<ul class="uk-nav-sub">
+												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DK17 KRE</strong></a></li>
+												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DSH</strong></a></li>
+											</ul>
+										</li>
+										<li class="uk-nav-divider"></li>
+										<li class="uk-parent">
+											<a href="#">VEHICLES</a>
+											<ul class="uk-nav-sub">
+												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DK17 KRE</strong></a></li>
+												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DSH</strong></a></li>
+											</ul>
+										</li>
+										<li class="uk-nav-divider"></li>
+										<li class="uk-parent">
+											<a href="#">DEFECTS</a>
 											<ul class="uk-nav-sub">
 												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DK17 KRE</strong></a></li>
 												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DSH</strong></a></li>

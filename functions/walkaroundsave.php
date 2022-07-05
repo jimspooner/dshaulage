@@ -25,12 +25,14 @@ function save_walkaround_form_action() {
       );
 
     $post_report = $_POST['post_details']['post_report'];
+    $post_mileage = $_POST['post_details']['post_mileage'];
     $post_description = $_POST['post_details']['post_description'];
     $post_vehicle = $_POST['post_details']['post_vehicle'];
     $post_reg = $_POST['post_details']['post_reg'];
-    $post_title = date('d M Y - G:i');
+    $post_title = date('d M Y - g:ia');
     $args = [
         'post_title' => $post_title,
+        'post_mileage' => $post_mileage,
         'post_content'=>$post_description,
         'post_category'=>array($post_vehicle),
         'tags_input'=>array($post_reg),
@@ -40,6 +42,7 @@ function save_walkaround_form_action() {
      
     $is_post_inserted = wp_insert_post($args);
     update_post_meta( $is_post_inserted, 'walkaround_report', $_POST['post_details']['post_report'] );
+    update_post_meta( $is_post_inserted, 'walkaround_mileage', $_POST['post_details']['post_mileage'] );
     update_post_meta( $is_post_inserted, 'walkaround_month', $_POST['post_details']['post_month'] );
     update_post_meta( $is_post_inserted, 'walkaround_year', $_POST['post_details']['post_year'] );
 

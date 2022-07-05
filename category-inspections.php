@@ -12,7 +12,7 @@
 									<div class="uk-card-header"><a onclick="history.back()"><h2 class="uk-margin-remove-top uk-margin-remove-bottom" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="reply"></span> <strong><?php _e( 'Daily Inspections - '.$cat_title, 'html5blank' ); ?></strong></h2></a></div>
 								</div>
 
-						<?php get_template_part('loop-cat'); ?>
+						<?php get_template_part('loop-all'); ?>
 
 						<?php get_template_part('pagination'); ?>
 						

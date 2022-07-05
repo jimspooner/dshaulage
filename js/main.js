@@ -116,7 +116,7 @@
  ]
 		
 var wheight = jQuery (window).height();
-var qid = 1;
+var qid = 0;
 var defects = "";
 var answer = "";
 var qa = "";
@@ -165,12 +165,13 @@ $("#walkaround_form").on("submit", function (event) {
             $(".waiting").show();
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const catID = urlParams.get('id');
+            const catID = $('#vehicle').val();
             const reg = urlParams.get('reg');
             var form= $(this);
             var ajaxurl = my_ajax_object.ajax_url;
             var detail_info = {
                 post_report: answer,
+                post_mileage: form.find("#post_mileage").val(),
                 post_vehicle: catID,
                 post_reg: reg,
                 post_month: today.toLocaleString('default', { month: 'long' }),
