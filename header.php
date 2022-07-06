@@ -33,8 +33,8 @@
 		 	<div class="uk-width-1-1 uk-grid-collapse" style="width:100%;" uk-grid>
 			 	<div class="uk-width-auto"><a href="<?php echo home_url(); ?>" style="line-height:1;background-color:#8DBAD8" class="uk-button uk-bgc-spot3 uk-text-white uk-padding-small"><span class="uk-icon" uk-icon="icon:home;ratio:1.5;"></span></a></div>
 			 	<div class="uk-width-expand">
-
-				 <div style="position:absolute;right:60px;color:#fff;top:17px;">MENU </div><button class="" id="menuToggle" type="button" uk-toggle="target: #offcanvas-flip"><span></span><span></span><span></span></button>
+				<div style="top:20px;left:80px" class="uk-text-white uk-position-absolute"><?php if ( is_user_logged_in() ) { $current_user = wp_get_current_user(); echo 'Hi, '.$current_user->user_firstname; } ?></div>
+				 <div style="position:absolute;right:60px;color:#fff;top:20px;">MENU </div><button class="" id="menuToggle" type="button" uk-toggle="target: #offcanvas-flip"><span></span><span></span><span></span></button>
 
 						<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true;">
 							<div class="uk-offcanvas-bar">
@@ -75,6 +75,7 @@
 												<li><a href="<?php echo home_url(); ?>" ><strong><span class="uk-margin-small-right uk-icon" uk-icon="icon:cog"></span>DSH</strong></a></li>
 											</ul>
 										</li>
+										<li><a href="<?php echo home_url(); ?>/wp-login.php?action=logout">LOG OUT</a><li>
 									</ul>
 								
 

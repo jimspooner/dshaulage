@@ -7,10 +7,9 @@
 				<!-- article -->
 				<article id="post-404">
 
-					<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-					<h2>
-						<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-					</h2>
+					<p class="uk-text-center uk-text-large"><?php _e( 'Currently unavailable', 'html5blank' ); ?></p>
+					<p class="uk-text-center uk-text-reg">This page is under development</p>
+
 
 				</article>
 				<!-- /article -->

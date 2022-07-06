@@ -12,8 +12,9 @@
             <p class="uk-text-center">Select your vehicle from the list below.</p>
             <div class="uk-padding uk-padding-remove-bottom uk-margin-bottom" ><select id="vehicle" class="uk-text-darkgrey uk-text-lead uk-padding-small uk-bgc-spot4" style="border-radius:8px;border:2px solid #333;color:#333;margin:2px!important;font-size:1.4rem;font-weight:700;width:100%;text-align:center;">
                             <?php $categories = get_terms( 
+
                                 'category', 
-                                array('parent' => 2)
+                                array('parent' => 2, 'hide_empty' => false,)
                             ); ?>
                             <?php foreach ($categories as $key => $category) {
                                 echo '<option value="'.$category->term_id.'">'.$category->name.'</option>';

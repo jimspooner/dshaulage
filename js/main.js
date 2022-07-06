@@ -123,7 +123,6 @@ var qa = "";
 var today = new Date();
 var date = today.getDate()+'-'+(today.getMonth())+'-'+today.getFullYear();
 $('#defectsq').height(wheight);
-$('#addvehicle').height(wheight);
 $.each(inspectionData, function (key, value) {
     quid = value.id;
     defects += '<div id="'+value.id+'" class="uk-text-left" style="display:none;width:100vw;">';
@@ -162,6 +161,7 @@ $('.defect').on("click", function() {
 });
 
 $("#walkaround_form").on("submit", function (event) {
+  
             event.preventDefault();
             $(".waiting").show();
             const queryString = window.location.search;

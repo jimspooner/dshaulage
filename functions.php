@@ -757,14 +757,72 @@ function my_login_stylesheet() {
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
-add_action('pre_get_posts', 'query_set_only_author' );
-function query_set_only_author( $wp_query ) {
- global $current_user;
- if( is_admin() && !current_user_can('edit_others_posts') ) {
-    $wp_query->set( 'author', $current_user->ID );
-    add_filter('views_edit-post', 'fix_post_counts');
-    add_filter('views_upload', 'fix_media_counts');
- }
+
+add_action( 'pre_get_posts', function ( $q )
+{    
+    if ( is_user_logged_in() && !current_user_can('administrator') ) { // First check if we have a logged in user before doing anything
+        if ( $q->is_main_query() // Only targets the main query
+) {
+    if(is_page()) {} else {
+            // Get the current logged in user
+            $current_logged_in_user = wp_get_current_user();
+
+            // Set the logged in user ID as value to the author parameter
+            $q->set( 'author', $current_logged_in_user->ID );
+    }
+        }
+    }    
+});
+
+
+add_filter( 'login_redirect', 'themeprefix_login_redirect', 10, 3 );
+/**
+ * Redirect user after successful login.
+ *
+ * @param string $redirect_to URL to redirect to.
+ * @param string $request URL the user is coming from.
+ * @param object $user Logged user's data.
+ * @return string
+ */
+function themeprefix_login_redirect( $redirect_to, $request, $user ) {
+    //is there a user to check?
+    if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+        //check for admins
+        if ( in_array( 'administrator', $user->roles ) ) {
+            // redirect them to the default place
+            return $redirect_to;
+        } else {
+            return home_url();
+        }
+    } else {
+        return $redirect_to;
+    }
 }
 
+function wporg_register_taxonomy_course() {
+    $labels = array(
+        'name'              => _x( 'Vehicles', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Vehicle', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Vehicles' ),
+        'all_items'         => __( 'All Vehicles' ),
+        'parent_item'       => __( 'Parent Vehicle' ),
+        'parent_item_colon' => __( 'Parent Vehicle:' ),
+        'edit_item'         => __( 'Edit Vehicle' ),
+        'update_item'       => __( 'Update Vehicle' ),
+        'add_new_item'      => __( 'Add New Vehicle' ),
+        'new_item_name'     => __( 'New Vehicle Name' ),
+        'menu_name'         => __( 'Vehicles' ),
+    );
+    $args   = array(
+        'hierarchical'      => true, // make it hierarchical (like categories)
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => [ 'slug' => 'vehicles' ],
+        'show_in_rest'      => true, 
+    );
+    register_taxonomy( 'vehicles', [ 'post' ], $args );
+}
+add_action( 'init', 'wporg_register_taxonomy_course' );
     ?>

@@ -1,6 +1,6 @@
 <?php 
 
-function my_enqueue() {
+function my_enqueue_1() {
 
     wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/main.js', array('jquery') );
 
@@ -8,12 +8,12 @@ function my_enqueue() {
             array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
 }
-add_action( 'wp_enqueue_scripts', 'my_enqueue' );
+add_action( 'wp_enqueue_scripts', 'my_enqueue_1' );
 
 
 
-add_action('wp_ajax_nopriv_save_post_details_form','save_vehicle_form_action');
-add_action('wp_ajax_save_post_details_form','save_vehicle_form_action');
+add_action('wp_ajax_nopriv_save_vehicle_form','save_vehicle_form_action');
+add_action('wp_ajax_save_vehicle_form','save_vehicle_form_action');
 
 function save_vehicle_form_action() {
 
@@ -30,7 +30,16 @@ function save_vehicle_form_action() {
     $args = [
         'cat_name' => $post_plate,
         'category_parent' => 2,
-        'post_content'=> $post_description,
+        'category_description'=> $post_description,
+    ];
+     
+    $is_cat_inserted = wp_insert_category($args);
+
+    $args = [
+        'taxonomy' => 'vehicles',
+        'cat_name' => $post_plate,
+        'category_parent' => 16,
+        'category_description'=> $post_description,
     ];
      
     $is_cat_inserted = wp_insert_category($args);
