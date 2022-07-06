@@ -692,6 +692,7 @@ function js_loop_shop_per_page( $cols ) {
 
 // require_once( get_template_directory() . '/functions/wc.php' );
 require_once( get_template_directory() . '/functions/walkaroundsave.php' );
+require_once( get_template_directory() . '/functions/addvehicle.php' );
 // require_once( get_template_directory() . '/functions/acf.php' );
 
 /*------------------------------------*\

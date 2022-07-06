@@ -20,8 +20,8 @@ $buttons: ('spot1',$spot1), ('spot2',$spot2), ('spot3',$spot3), ('spot4',$spot4)
                 &:hover {color:$white;}
         }
         .uk-textbutton-light-#{nth($button,1)} {
-                font: {size:$h5;family: map-get($fonts, "primary");weight:400;}padding:.5rem 1rem;margin:.3rem 0;color:nth($button,2);@include transition(all .4s);a
-                &:hover {color:$darkgrey;}
+                font: {size:$h5;family: map-get($fonts, "primary");weight:400;}padding:.5rem 1rem;margin:.3rem 0;color:$white;@include transition(all .4s);
+                &:hover {color:nth($button,2)!important;}
         }
         .uk-button-rightarrow-dark {
                 &:after {content:"";background-image:url(../img/icons/white-arrow-right.svg);background-repeat:no-repeat;background-position:center right;padding-right:60px;}

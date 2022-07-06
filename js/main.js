@@ -2,7 +2,7 @@
 	
 	$(function () {
 
-      var data = [
+      var inspectionData = [
          {
              "id" : 1,
              "q":"Good visibility for driver through cab windows and mirrors. All required mirrors fitted and adjusted correctly.",
@@ -123,7 +123,8 @@ var qa = "";
 var today = new Date();
 var date = today.getDate()+'-'+(today.getMonth())+'-'+today.getFullYear();
 $('#defectsq').height(wheight);
-$.each(data, function (key, value) {
+$('#addvehicle').height(wheight);
+$.each(inspectionData, function (key, value) {
     quid = value.id;
     defects += '<div id="'+value.id+'" class="uk-text-left" style="display:none;width:100vw;">';
     defects += '<div class="uk-position-top" style="margin-top:57px;">';
@@ -137,7 +138,7 @@ $.each(data, function (key, value) {
     defects += '</div></div>';
 });
 
-var numberOfElements = data.length;
+var numberOfElements = inspectionData.length;
 $('.last-event').attr('id', numberOfElements+1);
 $('#defectsq').append(defects);
 $('#'+qid).show();
@@ -193,6 +194,33 @@ $("#walkaround_form").on("submit", function (event) {
                     window.location.href = "/?report=saved";
                 }
             });
+});
+
+
+$("#addvehicle_form").on("submit", function (event) {
+    event.preventDefault();
+    $(".waiting").show();
+    var form= $(this);
+    var ajaxurl = my_ajax_object.ajax_url;
+    var detail_info = {
+        post_plate: form.find("#post_plate").val(),
+        post_description: form.find("#post_description").val()
+    }
+
+    $.ajax({
+        url: ajaxurl,
+        type: 'POST',
+        data: {
+            post_details : detail_info,
+            action: 'save_vehicle_form' // this is going to be used inside wordpress functions.php
+        },
+        error: function(error) {
+            alert("Insert Failed" + error);
+        },
+        success: function(response) {
+            window.location.href = "/?vehicle=saved";
+        }
+    });
 });
 
 });

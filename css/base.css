@@ -202,7 +202,6 @@ h5, h6 {
   background-color: transparent;
   color: white;
   font-size: 2.5rem;
-  padding: 20px;
   border: 0;
   text-align: center;
 }
@@ -380,14 +379,13 @@ header nav ul.uk-navbar-nav > li.hide {
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #DC143C;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-spot1:hover {
-  color: #333;
+  color: #DC143C !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -472,14 +470,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #228B22;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-spot2:hover {
-  color: #333;
+  color: #228B22 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -564,14 +561,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #2C70B2;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-spot3:hover {
-  color: #333;
+  color: #2C70B2 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -656,14 +652,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #ffde00;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-spot4:hover {
-  color: #333;
+  color: #ffde00 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -748,14 +743,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #b27f2c;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-spot5:hover {
-  color: #333;
+  color: #b27f2c !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -845,9 +839,8 @@ a
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-white:hover {
-  color: #333;
+  color: white !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -932,14 +925,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #000;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-black:hover {
-  color: #333;
+  color: #000 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -1024,14 +1016,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #e6e6e6;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-lightgrey:hover {
-  color: #333;
+  color: #e6e6e6 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -1116,14 +1107,13 @@ a
   font-weight: 400;
   padding: .5rem 1rem;
   margin: .3rem 0;
-  color: #333;
+  color: white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-a
 .uk-textbutton-light-darkgrey:hover {
-  color: #333;
+  color: #333 !important;
 }
 
 .uk-button-rightarrow-dark:after {
@@ -1311,7 +1301,7 @@ a
     stroke: #333 !important;
   }
   .maxwidth-400 {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
   }
 }
