@@ -1,11 +1,12 @@
+<div class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-small" uk-grid>
 <?php $startmonth = ''; if (have_posts()): while (have_posts()) : the_post(); ?>
 	<!-- article -->
 	
 
 		<?php  $month = get_post_meta(get_the_ID(), 'walkaround_month', true); $year = get_post_meta(get_the_ID(), 'walkaround_year', true); ?>
 
-		<?php if ( $startmonth <> '' && $startmonth <> $month) : ?></div></div><?php endif; ?>
-			<?php if ( $startmonth <> $month) : ?><div class="uk-card uk-card-default uk-margin-small-top">
+		<?php if ( $startmonth <> '' && $startmonth <> $month) : ?></div></div></div><?php endif; ?>
+			<?php if ( $startmonth <> $month) : ?><div><div class="uk-card uk-card-default uk-margin-small-top">
 				<div class="uk-card-header uk-position-relative" style="background-color:white;" uk-toggle="target: #<?php echo $month; ?>;">
 					<h3 class="uk-margin-small-bottom"><strong><?php echo $month.' - '.$year; ?></strong></h3>
 					<span class="uk-position-right uk-icon uk-folder-icon" style="top: 19px;right: 35px;" uk-icon="folder"></span>
@@ -39,3 +40,4 @@
 	<!-- /article -->
 
 <?php endif; ?>
+</div>

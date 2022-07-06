@@ -755,4 +755,15 @@ function my_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+add_action('pre_get_posts', 'query_set_only_author' );
+function query_set_only_author( $wp_query ) {
+ global $current_user;
+ if( is_admin() && !current_user_can('edit_others_posts') ) {
+    $wp_query->set( 'author', $current_user->ID );
+    add_filter('views_edit-post', 'fix_post_counts');
+    add_filter('views_upload', 'fix_media_counts');
+ }
+}
+
     ?>

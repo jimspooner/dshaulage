@@ -1310,6 +1310,10 @@ a
   .uk-folder-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
     stroke: #333 !important;
   }
+  .maxwidth-400 {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 320px) {

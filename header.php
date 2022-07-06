@@ -31,16 +31,16 @@
 	<header class="uk-bgc-spot3 uk-padding-small main-header uk-padding-remove-left uk-padding-remove-right" style="min-height:57px;max-height:57px;overflow:hidden;height:40px;" role="banner" uk-sticky>
 		 <div class="uk-position-top" style="width:100%;">
 		 	<div class="uk-width-1-1 uk-grid-collapse" style="width:100%;" uk-grid>
-			 	<div class="uk-width-auto"><a href="<?php echo home_url(); ?>" style="max-height:57px;background-color:#8DBAD8" class="uk-button uk-bgc-spot3 uk-text-white uk-text-lead uk-padding-small"><span class="uk-icon" uk-icon="icon:home;ratio:1.5;"></span></a></div>
+			 	<div class="uk-width-auto"><a href="<?php echo home_url(); ?>" style="line-height:1;background-color:#8DBAD8" class="uk-button uk-bgc-spot3 uk-text-white uk-padding-small"><span class="uk-icon" uk-icon="icon:home;ratio:1.5;"></span></a></div>
 			 	<div class="uk-width-expand">
 
 				 <div style="position:absolute;right:60px;color:#fff;top:17px;">MENU </div><button class="" id="menuToggle" type="button" uk-toggle="target: #offcanvas-flip"><span></span><span></span><span></span></button>
 
-						<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+						<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true;">
 							<div class="uk-offcanvas-bar">
 
 								<button class="uk-offcanvas-close" type="button" uk-close></button>
-								<div class="uk-width-1-2@s uk-width-2-5@m uk-margin-small-top">
+								<div class="uk-width-1-1 uk-margin-small-top">
 									<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
 										<li class="uk-active"><a href="<?php echo home_url(); ?>"><strong style="font-weight:600;">DASHBOARD</strong></a></li>
 										<li class="uk-nav-divider"></li>

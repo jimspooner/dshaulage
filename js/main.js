@@ -129,8 +129,8 @@ $.each(data, function (key, value) {
     defects += '<div class="uk-position-top" style="margin-top:57px;">';
     defects += '<div class="uk-text-center uk-text-white" style="width:100%;background-color:#aaa;padding:5px 0;">'+date+'</div>'
     defects += '<div class="uk-bgc-lightgrey uk-button uk-text-xxlarge uk-text-center uk-padding uk-width-1-1" style="border-bottom:1px solid #ccc;" data-id="'+value.id+'"><strong class="uk-text-darkgrey">'+value.a+'</strong></div>';
-    defects += '<div class="uk-padding uk-text-center uk-margin-top-large uk-text-xlarge">'+value.q+'</div>';
-    defects += '</div>';
+    defects += '<div class="maxwidth-400"><div class="uk-padding uk-text-center uk-margin-top-large uk-text-xlarge">'+value.q+'</div>';
+    defects += '</div></div>';
     defects += '<div class="uk-position-bottom uk-child-width-1-2 uk-grid-collapse" uk-grid>';
     defects += '<div class="nodefect uk-padding uk-text-center uk-button uk-bgc-spot2 uk-text-white" id="nodefect-'+value.id+'" data-q="'+value.q+'" data-a="No Defects">No Defects <span uk-icon="icon: check; ratio: 2"></span></div>';
     defects += '<div class="defect uk-padding uk-text-center uk-button uk-bgc-spot1 uk-text-white" id="defect-'+value.id+'" data-q="'+value.q+'"  data-a="Defects">Defects <span uk-icon="icon: close; ratio: 2"></span></div>';
