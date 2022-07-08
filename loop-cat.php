@@ -18,11 +18,6 @@
 					<div class="uk-width-auto"><p class="uk-text-reg"><?php the_title(); ?></p></div>
 					<div class="uk-width-expand uk-text-right" style="border-bottom:1px solid #fff;"><a class="uk-button uk-bgc-spot3 uk-text-white" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">VIEW</a></div>
 				</div>
-
-
-			<!-- </div>
-		</div> -->
-		
 		
 
 	<!-- /article -->
