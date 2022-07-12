@@ -1,49 +1,71 @@
 <?php 
 
-function my_enqueue_2() {
-
-    wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/main.js', array('jquery') );
-
-    wp_localize_script( 'ajax-script', 'my_ajax_object',
-            array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
-
-}
-add_action( 'wp_enqueue_scripts', 'my_enqueue_2' );
+// add_action('wp_ajax_nopriv_save_postservice_form','save_service_form_action');
+// add_action('wp_ajax_save_postservice_form','save_service_form_action');
 
 
+// function save_service_form_action() {
 
-add_action('wp_ajax_nopriv_save_service_form','save_service_form_action');
-add_action('wp_ajax_save_service_form','save_service_form_action');
+    
 
-function save_service_form_action() {
+//     $response = array(
+//         'error'             => '',
+//         'success'           => '',
+//         'post_id'           => '',
+//         'post_url'          => '',
+//       );
 
-    $post_frequency = $_POST['post_details']['post_frequency'];
-    $post_date = $_POST['post_details']['post_date'];
-    $post_nextdate = $_POST['post_details']['post_nextdate'];
-    $post_mileage = $_POST['post_details']['post_mileage'];
-    $post_description = $_POST['post_details']['post_description'];
-    $post_vehicle = $_POST['post_details']['post_vehicle'];
-    $post_title = $_POST['post_details']['post_title'];
-    $args = [
-        'post_title' => $post_title,
-        'post_content'=>$post_description,
-        'post_category'=>array($post_vehicle),
-        'post_status'=> 'publish',
-        'post_date'=> get_the_date()
-    ];
+//     $post_vehicle = $_POST['post_details']['post_vehicle'];
+//     $post_title = date('d M Y - g:ia');
+//     $post_description = 'Service Record';
 
-    $is_post_inserted = wp_insert_post($args);
-    update_post_meta( $is_post_inserted, 'service_fequency', $_POST['post_details']['post_frequency'] );
-    update_post_meta( $is_post_inserted, 'service_mileage', $_POST['post_details']['post_mileage'] );
-    update_post_meta( $is_post_inserted, 'service_date', $_POST['post_details']['post_date'] );
-    update_post_meta( $is_post_inserted, 'service_nextdate', $_POST['post_details']['post_nextdate'] );
+//     $args = [
+//         'post_title' => $post_title,
+//         'post_content'=> $post_description,
+//         'post_category'=>array(24),
+//         'post_status'=> 'publish',
+//         'post_date'=> get_the_date()
+//     ];
      
-    $is_cat_inserted = wp_insert_category($args);
+//     $is_post_inserted = wp_insert_post($args);
+    
 
-    if($is_post_inserted) {
-        return "success";
-    } else {
-        return "failed";
+//     if($is_post_inserted) {
+//         return "success";
+//     } else {
+//         return "failed";
+//     }
+     
+//     }
+
+
+add_action('wp_ajax_file_upload', 'file_upload_callback');
+add_action('wp_ajax_nopriv_file_upload', 'file_upload_callback');
+
+    function file_upload_callback() {
+
+        $args = [
+            'post_title' => date('d M Y - g:ia'),
+            'post_content'=> 'new service record upload',
+            'post_category'=>array(23, $_POST['vehicle']),
+            'post_status'=> 'publish',
+            'post_date'=> get_the_date()
+        ];
+         
+        $is_post_inserted = wp_insert_post($args);
+
+        $arr_img_ext = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf');
+        for($i = 0; $i < count($_FILES['file']['name']); $i++) {
+            if (in_array($_FILES['file']['type'][$i], $arr_img_ext)) {
+                $upload = wp_upload_bits($_FILES['file']['name'][$i], null, file_get_contents($_FILES['file']['tmp_name'][$i]));
+                update_post_meta( $is_post_inserted, 'doc_'.$i, $upload['url'] );
+                //$upload['url'] will gives you uploaded file path
+            }
+        }
+        
+        if($is_post_inserted) {
+            return "success";
+        } else {
+            return "failed";
+        }
     }
-     
- }

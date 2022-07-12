@@ -693,6 +693,8 @@ function js_loop_shop_per_page( $cols ) {
 // require_once( get_template_directory() . '/functions/wc.php' );
 require_once( get_template_directory() . '/functions/walkaroundsave.php' );
 require_once( get_template_directory() . '/functions/addvehicle.php' );
+require_once( get_template_directory() . '/functions/addservice.php' );
+require_once( get_template_directory() . '/functions/adddefect.php' );
 // require_once( get_template_directory() . '/functions/acf.php' );
 
 /*------------------------------------*\
@@ -799,30 +801,30 @@ function themeprefix_login_redirect( $redirect_to, $request, $user ) {
     }
 }
 
-function wporg_register_taxonomy_course() {
-    $labels = array(
-        'name'              => _x( 'Vehicles', 'taxonomy general name' ),
-        'singular_name'     => _x( 'Vehicle', 'taxonomy singular name' ),
-        'search_items'      => __( 'Search Vehicles' ),
-        'all_items'         => __( 'All Vehicles' ),
-        'parent_item'       => __( 'Parent Vehicle' ),
-        'parent_item_colon' => __( 'Parent Vehicle:' ),
-        'edit_item'         => __( 'Edit Vehicle' ),
-        'update_item'       => __( 'Update Vehicle' ),
-        'add_new_item'      => __( 'Add New Vehicle' ),
-        'new_item_name'     => __( 'New Vehicle Name' ),
-        'menu_name'         => __( 'Vehicles' ),
-    );
-    $args   = array(
-        'hierarchical'      => true, // make it hierarchical (like categories)
-        'labels'            => $labels,
-        'show_ui'           => true,
-        'show_admin_column' => true,
-        'query_var'         => true,
-        'rewrite'           => [ 'slug' => 'vehicles' ],
-        'show_in_rest'      => true, 
-    );
-    register_taxonomy( 'vehicles', [ 'post' ], $args );
-}
-add_action( 'init', 'wporg_register_taxonomy_course' );
+// function wporg_register_taxonomy_course() {
+//     $labels = array(
+//         'name'              => _x( 'Vehicles', 'taxonomy general name' ),
+//         'singular_name'     => _x( 'Vehicle', 'taxonomy singular name' ),
+//         'search_items'      => __( 'Search Vehicles' ),
+//         'all_items'         => __( 'All Vehicles' ),
+//         'parent_item'       => __( 'Parent Vehicle' ),
+//         'parent_item_colon' => __( 'Parent Vehicle:' ),
+//         'edit_item'         => __( 'Edit Vehicle' ),
+//         'update_item'       => __( 'Update Vehicle' ),
+//         'add_new_item'      => __( 'Add New Vehicle' ),
+//         'new_item_name'     => __( 'New Vehicle Name' ),
+//         'menu_name'         => __( 'Vehicles' ),
+//     );
+//     $args   = array(
+//         'hierarchical'      => true, // make it hierarchical (like categories)
+//         'labels'            => $labels,
+//         'show_ui'           => true,
+//         'show_admin_column' => true,
+//         'query_var'         => true,
+//         'rewrite'           => [ 'slug' => 'vehicles' ],
+//         'show_in_rest'      => true, 
+//     );
+//     register_taxonomy( 'vehicles', [ 'post' ], $args );
+// }
+// add_action( 'init', 'wporg_register_taxonomy_course' );
     ?>

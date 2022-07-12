@@ -1,9 +1,6 @@
 <?php $startmonth = ''; if (have_posts()): while (have_posts()) : the_post(); ?>
 	<!-- article -->
 	
-
-    
-
 <?php endwhile; ?>
 <p>Please select your vehicle history below.</p>
 <?php $categories = get_terms( 'category', array('parent' => 2)); ?>

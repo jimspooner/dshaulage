@@ -41,7 +41,6 @@ function save_walkaround_form_action() {
     ];
      
     $is_post_inserted = wp_insert_post($args);
-    wp_set_object_terms($is_post_inserted, 16, 'vehicles');
     update_post_meta( $is_post_inserted, 'walkaround_report', $_POST['post_details']['post_report'] );
     update_post_meta( $is_post_inserted, 'walkaround_mileage', $_POST['post_details']['post_mileage'] );
     update_post_meta( $is_post_inserted, 'walkaround_month', $_POST['post_details']['post_month'] );

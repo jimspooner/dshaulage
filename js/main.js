@@ -223,6 +223,68 @@ $("#addvehicle_form").on("submit", function (event) {
     });
 });
 
+
+$('body').on('change', '#post_files', function() {
+    $(".waiting").show();
+    var ajaxurl = my_ajax_object.ajax_url;
+    $this = $(this);
+    file_obj = $this.prop('files');
+    form_data = new FormData();
+    for(i=0; i<file_obj.length; i++) {
+        form_data.append('file[]', file_obj[i]);
+    }
+    form_data.append('action', 'file_upload');
+    form_data.append('vehicle', $('#vehicle').val());
+    // form_data.append('security', blog.security);
+
+    $.ajax({
+        url: ajaxurl,
+        type: 'POST',
+        contentType: false,
+        processData: false,
+        data: form_data,
+        error: function(error) {
+            alert("upload Failed " + error);
+        },
+        success: function (response) {
+            window.location.href = "/?service=saved";
+        }
+    });
+});
+
+
+$('body').on('change', '#post_defects', function() {
+    $(".waiting").show();
+    var ajaxurl = my_ajax_object.ajax_url;
+    $this = $(this);
+    file_obj = $this.prop('files');
+    form_data = new FormData();
+    for(i=0; i<file_obj.length; i++) {
+        form_data.append('file[]', file_obj[i]);
+    }
+    form_data.append('action', 'defect_file_upload');
+    form_data.append('vehicle', $('#vehicle').val());
+    form_data.append('description', $('#post_description').val());
+    // form_data.append('security', blog.security);
+
+    $.ajax({
+        url: ajaxurl,
+        type: 'POST',
+        contentType: false,
+        processData: false,
+        data: form_data,
+        error: function(error) {
+            alert("upload Failed " + error);
+        },
+        success: function (response) {
+            window.location.href = "/?defect=saved";
+        }
+    });
+});
+
+
+
+
 });
 	
 })(jQuery, this);

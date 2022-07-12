@@ -33,8 +33,8 @@
 		 	<div class="uk-width-1-1 uk-grid-collapse" style="width:100%;" uk-grid>
 			 	<div class="uk-width-auto"><a href="<?php echo home_url(); ?>" style="line-height:1;background-color:#8DBAD8" class="uk-button uk-bgc-spot3 uk-text-white uk-padding-small"><span class="uk-icon" uk-icon="icon:home;ratio:1.5;"></span></a></div>
 			 	<div class="uk-width-expand">
-				<div style="top:20px;left:80px" class="uk-text-white uk-position-absolute"><?php if ( is_user_logged_in() ) { $current_user = wp_get_current_user(); echo 'Hi, '.$current_user->user_firstname; } ?></div>
-				 <div style="position:absolute;right:60px;color:#fff;top:20px;">MENU </div><button class="" id="menuToggle" type="button" uk-toggle="target: #offcanvas-flip"><span></span><span></span><span></span></button>
+				<div style="top:20px;left:80px" class="uk-text-white uk-position-absolute"><?php if ( is_user_logged_in() ) { $current_user = wp_get_current_user(); echo 'Welcome, '.$current_user->user_firstname; } ?></div>
+				 <!-- <div style="position:absolute;right:60px;color:#fff;top:20px;">MENU </div><button class="" id="menuToggle" type="button" uk-toggle="target: #offcanvas-flip"><span></span><span></span><span></span></button> -->
 
 						<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true;">
 							<div class="uk-offcanvas-bar">
@@ -88,6 +88,8 @@
 		
 </header>
 <?php if (isset($_GET['report'])) : if ($_GET['report'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">YOUR REPORT HAS BEEN SAVED</div><?php endif; endif; ?>
-<?php if (isset($_GET['vehicle'])) : if ($_GET['report'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">YOUR VEHICLE HAS BEEN ADDED</div><?php endif; endif; ?>
+<?php if (isset($_GET['vehicle'])) : if ($_GET['vehicle'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">YOUR VEHICLE HAS BEEN ADDED</div><?php endif; endif; ?>
+<?php if (isset($_GET['service'])) : if ($_GET['service'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">A SERVICE RECORD HAS BEEN ADDED</div><?php endif; endif; ?>
+<?php if (isset($_GET['defect'])) : if ($_GET['defect'] ==  'saved') : ?><div class="uk-bgc-spot2 saved uk-text-center uk-text-white uk-padding-small" style="width:100%;">A DEFECT HAS BEEN ADDED</div><?php endif; endif; ?>
 			<!-- /header -->
 

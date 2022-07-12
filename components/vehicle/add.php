@@ -12,7 +12,7 @@
                 <p class="uk-text-center">Add your Vehicle registration <br>and description below</p>
 
                 <div class="uk-padding uk-padding-remove-top">
-                    <input type="text" class="uk-input" style="margin-bottom:5px;font-size:1.4rem!important;" name="post_plate" id="post_plate" value="" placeholder="Your registration here" style="font-size:1.5rem;width:100%;padding:10px;"></input>
+                    <input type="text" class="uk-input" style="margin-bottom:5px;font-size:1.4rem!important;" name="post_plate" id="post_plate" value="" placeholder="Your registration" style="font-size:1.5rem;width:100%;padding:10px;"></input>
                     <textarea type="textarea" placeholder="Your vehicle description" class="uk-textarea" col="20" name="post_description" id="post_description" value="" style="font-size:1.5rem;width:100%;height:210px;padding:10px;"></textarea>
                 </div>
                 </div>
