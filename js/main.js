@@ -235,6 +235,8 @@ $('body').on('change', '#post_files', function() {
     }
     form_data.append('action', 'file_upload');
     form_data.append('vehicle', $('#vehicle').val());
+    form_data.append('post_month', today.toLocaleString('default', { month: 'long' }));
+    form_data.append('post_year', today.getFullYear());
     // form_data.append('security', blog.security);
 
     $.ajax({
@@ -265,6 +267,8 @@ $('body').on('change', '#post_defects', function() {
     form_data.append('action', 'defect_file_upload');
     form_data.append('vehicle', $('#vehicle').val());
     form_data.append('description', $('#post_description').val());
+    form_data.append('post_month', today.toLocaleString('default', { month: 'long' }));
+    form_data.append('post_year', today.getFullYear());
     // form_data.append('security', blog.security);
 
     $.ajax({

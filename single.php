@@ -8,15 +8,17 @@
 					<div class="" style="width:100%;">
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+
+
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
+		<?php if (in_category('inspections')) : ?>
 			<!-- post title -->
 			<div class="uk-card uk-card-default uk-margin-medium-bottom">
-									<div class="uk-card-header"><a onclick="history.back()"><h2 class="uk-margin-remove-top uk-margin-remove-bottom" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="reply"></span> <strong><?php the_title(); ?></strong></h2></a></div>
+									<div class="uk-card-header"><a onclick="history.back()"><h2 class="uk-margin-remove-top uk-margin-remove-bottom" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="reply"></span> <strong>Daily Inspection</strong></h2></a></div>
 								</div>
-			<!-- <h2 style="line-height:1.2;margin-top:0;">Daily Inspection<br><span style="font-weight:400;color:"><?php the_title(); ?></span></h2> -->
+			<h2 style="line-height:1.2;margin-top:0;"><span style="font-weight:400;color:"><?php the_title(); ?></span></h2>
 			<!-- /post title -->
 			<?php $report = get_post_meta(get_the_ID(), 'walkaround_report'); $report_array = explode(';', $report[0]); $mileage = get_post_meta(get_the_ID(), 'walkaround_mileage');//print_r($report_array); ?>
 			<!-- post details -->
@@ -34,6 +36,31 @@
 
 			<?php the_content(); // Dynamic Content ?>
 
+		<?php endif; ?>
+
+		<?php if (in_category('defects') || in_category('services')) : ?>
+			<?php if (in_category('services')) : $title = 'Service'; endif; if (in_category('defects')) : $title = 'Defects'; endif; ?>
+			<?php $meta = get_post_meta( $post->ID, '', true ); //print_r($meta); ?>
+
+			
+			<!-- post title -->
+			<div class="uk-card uk-card-default uk-margin-medium-bottom">
+									<div class="uk-card-header"><a onclick="history.back()"><h2 class="uk-margin-remove-top uk-margin-remove-bottom" style="font-size:1.4rem;"><span class="uk-margin-small-right uk-icon" uk-icon="reply"></span> <strong><?php echo $title; ?></strong></h2></a></div>
+								</div>
+			<h2 style="line-height:1.2;margin-top:0;"><span style="font-weight:400;color:"><?php the_title(); ?></span></h2>
+			<!-- /post title -->
+			
+			<?php foreach ($meta as $key => $value) {
+					if (strpos($key, 'doc_') !== false) {
+						echo '<img src="'.$value[0].'" alt="Defect image" style="margin-bottom:5px;max-width:100%;">';
+					}
+					
+				} ?>
+			<!-- <div id="defectsq" class="results"></div> -->
+
+			<?php the_content(); // Dynamic Content ?>
+
+		<?php endif; ?>
 			
 
 		</article>

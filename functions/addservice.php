@@ -62,6 +62,9 @@ add_action('wp_ajax_nopriv_file_upload', 'file_upload_callback');
                 //$upload['url'] will gives you uploaded file path
             }
         }
+
+        update_post_meta( $is_post_inserted, 'month', $_POST['post_month'] );
+        update_post_meta( $is_post_inserted, 'year', $_POST['post_year'] );
         
         if($is_post_inserted) {
             return "success";
